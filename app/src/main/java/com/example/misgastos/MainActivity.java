@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         DateFormat df = new SimpleDateFormat("EEE, d MMM yyyy, HH:mm");
         String date = df.format(Calendar.getInstance().getTime());
 
-        StringRequest stringRequest = new StringRequest(Request.Method.POST, "https://script.google.com/macros/s/AKfycbwnq5fev8YrvXxPBQiNBWwnRIOF-vdlW3W2UQFxzOulNHs1U4qiTwAwrVJwcA9G0lGD/exec", new Response.Listener<String>() {
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, "URL EXCEL", new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 Intent intent = new Intent(getApplicationContext(), DoneActivity.class);
